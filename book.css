@@ -68,8 +68,7 @@
         outline-style: none;
             width:25rem;
             height: .5rem;
-            padding: 1rem 1.5rem;   
-         
+            padding: 1rem 1.5rem;  
     
             border:.1rem solid #222;
             color: rgb(90, 90, 90);
@@ -78,6 +77,10 @@
             transition: background-color .6s;
         
             
+        }
+        .searchField::placeholder{
+            font-size: .8rem;
+            color: rgb(165, 164, 164);
         }
     .btn {
         background-color: transparent;
@@ -90,3 +93,4 @@
         font-size: 1.3rem;
      
     }
+
