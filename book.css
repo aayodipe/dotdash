@@ -1,0 +1,92 @@
+
+    /* Books  */
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        grid-auto-rows: 30.3rem;
+        grid: 2rem;
+        padding: 3rem;
+      
+    }
+    h1, p {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: normal
+        ;
+    }
+    .card {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 1rem;
+        flex:1 0 1;
+
+
+    }
+    .card img {
+        max-width:100%;
+        width:100%;
+        height: 24.1rem;
+        object-fit:contain;
+    }
+    
+    
+    .card-body {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        color: #326d7f;
+    
+    }
+    
+    .title {
+        text-align:center;
+        font-size: 1rem;
+    }
+
+    .author {
+        text-align: right;
+        margin-right: .5rem;
+        color:#424242;
+    }
+
+    .author::before{
+        content: 'by ';
+    }
+    .searchField {
+        outline-style: none;
+            width:25rem;
+            height: .5rem;
+            padding: 1rem 1.5rem;   
+         
+    
+            border:.1rem solid #222;
+            color: rgb(90, 90, 90);
+            font-size: 1.5rem;
+            outline: none;  
+            transition: background-color .6s;
+        
+            
+        }
+    .btn {
+        background-color: transparent;
+        border:none;
+        position: relative;
+        left:-6rem;
+        outline:none;
+        cursor:pointer;
+        color:#04d462;
+        font-size: 1.3rem;
+     
+    }

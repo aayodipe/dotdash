@@ -1,0 +1,160 @@
+/* Generall styling  */
+*, 
+::before,
+::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/273280/newsletter-new.png) no-repeat calc(100% - 10px) 10px;
+    margin: 0;
+    padding: 10px;
+}  
+p{
+    color:#989898
+}
+
+input {
+    margin-bottom: 1.2rem;
+
+}
+
+ul {
+    list-style-type: none;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: normal
+    ;
+}
+/* Specific Styling */
+
+.wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    background-color: #fff;
+    justify-content: end;
+    align-items: end;
+    overflow: hidden;
+
+}
+.newletter {
+    width: 45rem;
+    grid-column: 9/-1;;
+    grid-row: 8/-1;
+
+}
+
+.heading {
+    color: #008EBB;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.heading::before {
+        content: "";
+        width: 45rem;
+        height: .3rem;
+        background-color: #008EBB;
+        display: block;
+        margin: auto;
+        /* margin-top: 1rem; */
+        margin-bottom: 1rem;
+
+}
+      
+.heading::after {
+        content: "";
+        width: 45rem;
+        height: .1rem;
+        background-color: #008EBB;
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
+
+}
+section .slugan {
+    color:#989898;
+    margin-left:.3rem;
+    margin-top: -.8rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:#989898;
+    margin-top: 12rem;
+    
+}
+
+.email {
+        width: 45rem;
+        height: 4rem;
+        border: .1rem solid #98989859;
+        border-radius: .6rem;
+        margin: 1rem 0;
+        padding-left: 2rem;
+        font-weight: bold;
+    }
+.email::placeholder {
+        color:#989898cc;
+        font-size: 1.2rem;
+}
+
+
+
+
+.btn__container {
+    background-color: #398EB8;
+    padding: 1rem;
+    width: 45rem;
+    border-radius: .6rem;
+    display: inline-block;
+  justify-content: center;
+  align-self: center;
+}
+
+.btn {
+    width: 43rem;
+    background-color: #63B8D9;
+    outline: none;
+    border:none;
+    color: #fff;
+    padding: 1.4rem;
+    box-shadow: 0 .4rem #1B4B63;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    
+
+	
+}
+
+.btn:active {
+
+}
+.btn i {
+    margin:0 1.6rem;
+    color :#fff
+}
+
+  .api {
+    color: #008EBB;
+    color: #87E3FF;
+    color:#989898
+  }
+    

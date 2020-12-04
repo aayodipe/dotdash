@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+    
+        
+        <div class="buttons">
+            <ul>
+                <li>
+                    <a href="book.html">Books List</a>
+                </li>
+                <li>
+                    <a href="newletters.html">NewsLetter</a>
+                </li>
+           
+            </ul>
+      
+            <button class = "btn btn_accept">Accept</button>
+            <button class = "btn btn_cancel">Cancel</button> 
+        </div> 
+        <!-- The Modal -->
+        <div class="modal_container">
+               <!-- Thank you Modal -->
+            <div class="modal thank_you_modal">              
+                <!-- Modal content -->           
+                <div class="modal-content">    
+                    <button class="close-btn-accept">&times;</button>           
+                    <h2>Thank You!</h2>
+                </div>                
+            </div>
+
+               <!-- Come back Modal -->
+            <div class="modal come_back_soon_modal">  
+                 <!-- Modal content -->            
+                 <div class="modal-content">     
+                    <button class="close-btn-cancel">&times;</button>          
+                    <h2>Come Back Soon</h2>
+                </div>       
+            </div>         
+        </div>
+             
+        <!-- 2. Create two popups, one positioned a bit off from the bottom right corner of the page and the other from the top right. The popups should have rounded corners, a slightly thick border, and some padding. One popup should contain the text "Thank you!" while the other should contain the text "Come back soon." -->
+        
+        <!-- 3. Now, position the two popups off screen to the right using CSS. -->
+        
+        <!-- 4. We will now complete the exercise. Add a click handler to each button. For the first button, when clicked we want to slide the "Come back soon" popup from the right into view. For the second button, when clicked we want to slide the "Thank you!" popup from the right into view. The popups should slide back out of view 8 seconds after coming into view or when clicking anywhere on the page except the buttons and the popups. -->
+        
+        <!-- 5. BONUS: Make this work for touch devices! -->
+        
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+/* Set the font size of the page to 10px */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+ width: 100vw;
+ display:grid;
+ height: 100vh;
+ grid-template-columns: repeat(8,1fr);
+ grid-template-rows: repeat(2,1fr);
+ overflow: hidden;
+}
+ul {
+    list-style-type: none;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: normal
+    ;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/  7;
+    grid-row: 1/-1;
+    justify-content: center;
+    align-items: center;
+  
+}
+.modal_container {
+
+    grid-column: 7/-1;
+    grid-row: 1/-1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem 1rem 1rem;
+}
+
+.btn {
+    margin-right:.6rem;
+    width:15rem;
+    height:4rem;
+    border:none;
+    border-radius: 11rem;
+    color:#fff;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    outline: none;
+    cursor: pointer;
+    transition: all .9s ease
+}
+.btn:hover {
+    font-size: 1.6rem;
+
+}
+.btn_accept{
+    background-color: #054909;
+}
+.btn_accept:hover{
+    background-color: #2d852f
+}
+.btn_cancel{
+    background-color: #d32439
+}
+.btn_cancel:hover{
+    background-color: #f7243c
+
+}
+
+/* Popup Modal  */
+
+
+
+.modal {
+  
+    flex-flow: row; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1rem;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 2rem;  
+    overflow: auto;/*in case if scroll is needed*/
+    background-color: rgba(0,0,0,.5);  
+    position: relative;
+    transition:right .9s cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+} 
+
+
+.thank_you_modal {
+    background:linear-gradient(to left, rgba(7, 163, 158, 0.877),rgba(7, 103, 141, 0.884));
+    border:.2rem solid rgba(17, 12, 16, 0.37);   
+    display: flex;
+    right : -45rem; 
+
+
+
+}
+.thank_you_modal h2{
+    font-size: 6rem;
+    color:#fff;
+}
+
+.come_back_soon_modal {
+    display: flex;
+    background:linear-gradient(to left, rgba(22, 8, 8, 0.877),rgba(121, 70, 155, 0.9));
+    border:.2rem solid rgb(192, 192, 192);
+    padding: 1rem;
+    right : -45rem; 
+
+
+
+}
+.come_back_soon_modal h2 {
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+.close-btn-accept, .close-btn-cancel {
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(12, 7, 7,.5);
+    border:none;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;   
+}
+
+
+.close-btn:active {
+    outline: none;
+    border:none
+}
+
